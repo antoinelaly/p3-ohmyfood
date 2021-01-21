@@ -1,0 +1,138 @@
+section.parent {
+  display: flex;
+  background-color: #eeeded;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 60px;
+}
+
+.restaurants h3 {
+padding-top: 25px;
+padding-bottom: 5px;
+  width: 90vw;
+}
+
+.main figure {
+  display: flex;
+  flex-flow: column;
+  flex: 1 0 220px;
+  padding: 5px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 7px 15px 1px#D3D3D3;
+}
+
+.main figure img {
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  height: 170px;
+  border-radius: 16px 16px 0px 0px;
+  object-position: 40% 60%;
+}
+
+.restaurants figcaption {
+  display: flex;
+  /*flex: 5;*/
+}
+
+.restaurants figcaption .ledesc {
+  flex: 3;
+  padding: 8px;
+}
+
+figure .nouveau {
+  display: flex;
+  position: relative;
+  top:-130px;
+  padding: 6px 10px;
+  background: #99E2D0;
+  margin-right: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #225e4f;
+}
+
+.restaurants figcaption .lecoeur {
+  display: flex;
+  position: relative;
+  top:-35px;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.coeurrose {
+  position: relative;
+  top: 10px;
+}
+
+.coeurrose-old {
+  position: relative;
+  top: 30px;
+}
+
+.coeurrose .fa-heart, .coeurrose-old .fa-heart {
+  position: absolute;
+  z-index: 3;
+}
+
+.coeurrose .fas.fa-heart, .coeurrose-old .fas.fa-heart {
+  color: #FF79DA;
+  z-index: 1;
+}
+.fa-gradient {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.coeurrose .overlay, .coeurrose-old .overlay {
+  position: absolute;
+  top: -15px/*-25px*/;
+  width: 15px;
+  height: 30px/*50px*/;
+  background: #fefefe;
+  z-index: 2;
+  animation: fill .5s ease;
+}
+
+.coeurrose:hover .overlay, .coeurrose-old:hover .overlay {
+  transform: scaleY(0);
+  animation-name: progress-bar;
+}
+
+@keyframes progress-bar{
+  from {
+      transform: scaleY(1);  
+ 
+  }
+  to {
+      transform: scaleY(0);
+  }
+}
+
+.coeurrose:hover .far.fa-heart, .coeurrose-old:hover .far.fa-heart {
+  animation: opacity-far .5s;
+  opacity: 0;
+}
+
+@keyframes opacity-far{
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+

@@ -1,0 +1,60 @@
+.filtres {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 25px 25px;
+}
+
+.filtres .letitre {
+    display: flex;
+    padding-right: 20px;
+}
+
+.filtres .letitre h3 {
+    padding-top: 35px;
+}
+
+.filtres .petitsb {
+    display: flex;
+    border: solid #eeeded;
+    border-radius: 50px;
+    background-color: #eeeded;
+    box-shadow: 0 7px 15px 1px#eeeded;
+    padding: 15px;
+    margin: 15px;
+}
+.filtres .petitsb:hover {
+background-color: #d9c6f0;
+}
+
+.petitsb .fas  {
+    color: grey;
+    padding: 7px;
+    position: relative;
+    left: -10px;
+}
+.filtres .petitsb:hover .fas {
+    color: #9356DC;
+}
+
+.petitsb p  {
+    padding: 6px;;
+}
+
+
+.petitsb .button {
+    position: relative;
+    background-color: #9356DC;
+    border-radius: 50%;
+    /*padding: 5px 15px;*/
+    padding: 5px 8px;
+    margin: 5px;
+    color: #fff;
+    left: -30px;
+    font-size: 10px;
+}
+
+@media (max-width: 600px) {
+    .filtres .petitsb {
+        width: 100vw;
+    }
+}

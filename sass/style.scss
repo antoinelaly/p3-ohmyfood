@@ -1,0 +1,22 @@
+@import "./libs/leheader";
+@import "./libs/filtres";
+@import "./libs/restau";
+@import "./libs/lefooter";
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Shrikhand', cursive;
+}
+
+body, h2, h3, h4, p {
+  margin: 0;
+}
+
+header, section, footer { 
+  max-width: 1800px;
+  margin: 0 auto !important; 
+}
+
