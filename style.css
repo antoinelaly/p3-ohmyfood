@@ -23,7 +23,7 @@ nav {
   padding: 10px;
 }
 
-.bsearch {
+.bsearch p {
   padding-left: 18px;
 }
 
@@ -85,7 +85,7 @@ nav {
   border: solid #f6f6f6;
   border-radius: 50px;
   background-color: #f6f6f6;
-  box-shadow: 0 7px 15px 1px #f6f6f6;
+  box-shadow: 0 7px 15px 1px #e8e8e8;
   padding: 15px;
   margin: 15px;
 }
@@ -139,8 +139,8 @@ section.parent {
 }
 
 .restaurants h3 {
-  padding-top: 25px;
-  padding-bottom: 5px;
+  padding-top: 50px;
+  padding-bottom: 15px;
   width: 90vw;
 }
 
@@ -148,7 +148,6 @@ section.parent {
   display: flex;
   flex-flow: column;
   flex: 1 0 220px;
-  padding: 5px;
   margin: 10px;
   background-color: #fff;
   border-radius: 18px;
@@ -170,7 +169,11 @@ section.parent {
 
 .restaurants figcaption .ledesc {
   flex: 3;
-  padding: 8px;
+  padding: 15px;
+}
+
+.restaurants figcaption .ledesc p {
+  padding: 5px 0px;
 }
 
 figure .nouveau {
@@ -180,9 +183,10 @@ figure .nouveau {
   padding: 6px 10px;
   background: #99E2D0;
   margin-right: 10px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   color: #008766;
+  letter-spacing: 0.5px;
 }
 
 .restaurants figcaption .lecoeur {
@@ -293,6 +297,10 @@ img {
   color: #fff;
 }
 
+footer .logo {
+  padding-bottom: 15px;
+}
+
 li a {
   outline: none;
   text-decoration: none;
@@ -347,7 +355,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2 {
+h1, h2, footer h5 {
   font-family: "Shrikhand", cursive;
 }
 
