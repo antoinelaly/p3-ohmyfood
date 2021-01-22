@@ -12,7 +12,7 @@ nav {
 
 .logo img {
   justify-content: center;
-  width:180px;
+  width:168px;
 }
 
 .bsearch {
@@ -23,18 +23,22 @@ nav {
   padding: 10px;
 }
 
+.bsearch {
+  padding-left: 18px;
+}
+
 .lemenu {
   display:flex;
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
 }
 
   .lemenu h3 {
     justify-content: center;
     text-align: center;
-    padding: 30px 50px 10px;
+    padding: 40px 50px 10px;
   }
 
   .lemenu button {
@@ -58,5 +62,5 @@ nav {
     padding: 15px 20px;
     border-radius: 50px;
     border: none;
-    margin: 15px;
+    margin: 35px 15px;
   }
