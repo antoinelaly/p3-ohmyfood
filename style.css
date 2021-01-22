@@ -27,7 +27,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eeeded;
+  background-color: #f6f6f6;
   padding-bottom: 25px;
 }
 
@@ -78,10 +78,10 @@ nav {
 
 .filtres .petitsb {
   display: flex;
-  border: solid #eeeded;
+  border: solid #f6f6f6;
   border-radius: 50px;
-  background-color: #eeeded;
-  box-shadow: 0 7px 15px 1px #eeeded;
+  background-color: #f6f6f6;
+  box-shadow: 0 7px 15px 1px #f6f6f6;
   padding: 15px;
   margin: 15px;
 }
@@ -124,7 +124,7 @@ nav {
 }
 section.parent {
   display: flex;
-  background-color: #eeeded;
+  background-color: #f6f6f6;
 }
 
 .main {
@@ -178,7 +178,7 @@ figure .nouveau {
   margin-right: 10px;
   font-size: 11px;
   font-weight: 600;
-  color: #225e4f;
+  color: #008766;
 }
 
 .restaurants figcaption .lecoeur {
@@ -282,7 +282,7 @@ img {
   }
 }
 .footer {
-  background-color: #2c2c2c;
+  background-color: #353535;
 }
 
 .footer a {
