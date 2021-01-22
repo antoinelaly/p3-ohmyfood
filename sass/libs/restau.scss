@@ -38,7 +38,6 @@ padding-bottom: 5px;
 
 .restaurants figcaption {
   display: flex;
-  /*flex: 5;*/
 }
 
 .restaurants figcaption .ledesc {
@@ -75,6 +74,24 @@ img {
   vertical-align: middle;
 }
 
+
+.coeurrose {
+  position: relative;
+  top: 10px;
+}
+
+.coeurrose-old {
+  position: relative;
+  top: 30px;
+}
+
+.coeurrose .fa-heart, .coeurrose-old .fa-heart {
+  position: absolute;
+  z-index: 3;
+  /*left: 2px;*/
+  font-size: 20px;
+}
+
 /* gradient */
 :root {
   position: relative;
@@ -98,13 +115,24 @@ img {
 @supports (mask-size: cover) or (-webkit-mask-size: cover){
   .with-icon:before {
       content: '';
-      mask: var(--icon-heart) /*no-repeat center*/;
-      -webkit-mask: var(--icon-heart) no-repeat /*center*/;
+      mask: var(--icon-heart) ;
+      -webkit-mask: var(--icon-heart) no-repeat;
       mask-size: cover;
       -webkit-mask-size: cover;
       background: var(--icon-color);
   }
 }
+
+.coeurrose .overlay, .coeurrose-old .overlay {
+  position: absolute;
+  top: -13px;
+  width: 18px;
+  height: 32px;
+  background: #fefefe;
+  z-index: 2;
+  animation: fill 0.5s ease;
+}
+
 
 .coeurrose:hover .overlay, .coeurrose-old:hover .overlay {
   transform: scaleY(0);
