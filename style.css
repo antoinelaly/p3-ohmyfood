@@ -17,9 +17,9 @@ nav {
 
 .bsearch {
   display: flex;
-  background-color: #cdcdcd;
+  background-color: #eaeaea;
   justify-content: center;
-  border-top: solid 2px #a8a8a8;
+  border-top: solid 2px #d5d5d5;
   padding: 10px;
 }
 
