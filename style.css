@@ -86,14 +86,13 @@ nav {
   padding: 15px;
   margin: 15px;
 }
-.filtres .petitsb :hover, .filtres .petitsb :active {
-  background-color: #d9c6f0;
-}
 .filtres .petitsb .fas {
+  display: flex;
   color: grey;
   padding: 7px;
   position: relative;
-  left: -10px;
+  left: -20px;
+  align-items: center;
 }
 .filtres .petitsb :hover .fas {
   color: #9356DC;
@@ -111,10 +110,25 @@ nav {
   left: -30px;
   font-size: 10px;
 }
+.filtres .petitsb .contenub {
+  display: flex;
+}
+
+.filtres .petitsb:hover {
+  background-color: #d9c6f0;
+}
+
+.filtres .petitsb:active {
+  background-color: #d9c6f0;
+}
 
 @media (max-width: 600px) {
   .filtres .petitsb {
     width: 100vw;
+  }
+  .filtres .petitsb .button {
+    margin: 15px;
+    left: -40px;
   }
 }
 section.parent {
