@@ -99,6 +99,7 @@ nav {
 }
 .filtres .petitsb p {
   padding: 6px;
+  align-items: center;
 }
 .filtres .petitsb .button {
   position: relative;
