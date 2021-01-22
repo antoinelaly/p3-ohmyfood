@@ -1,24 +1,3 @@
-.overlay-home {
-  position: absolute;
-  z-index: 0;
-  background: #fefefe;
-  animation: revealpage 2s linear;
-}
-
-@keyframes revealpage {
-  0% { z-index: 100;  display: inline; 
-    opacity: 1;  width: 99vw;
-    height: 95vh;  }
-    95%  { z-index: 100;  display: inline; 
-      opacity: 1;  width: 95vw;
-      height: 95vh;  }
-  100%  { z-index: -1;display: none; 
-    opacity: 0;width:0;
-    height:0;
-    overflow:hidden;  }
-}
-
-
 nav {
   display:flex;
   flex-direction: column;
@@ -85,3 +64,83 @@ nav {
     border: none;
     margin: 35px 15px;
   }
+
+  /* overlay */ 
+.overlay-home {
+  position: absolute;
+  z-index: 0;
+  background: #fefefe;
+  animation: revealpage 2s linear;
+}
+
+@keyframes revealpage {
+  0% { z-index: 100;  display: inline; 
+    opacity: 1;  width: 98.5vw;
+    height: 90vh;  }
+  98%  { z-index: 100;  display: inline; 
+    opacity: 1;  width: 98.5vw;
+    height: 99vh;  }
+  100%  { z-index: -1;display: none; 
+    opacity: 0;width:0;
+    height:0;
+    overflow:hidden;  }
+}
+
+/* skeleton */ 
+$skeleton-color: #e0e0e0;
+$skeleton-width: 320px;
+$skeleton-offset: 100px;
+
+$image-height: 150px;
+
+$line-height: 16px;
+$line-1-width: 50%;
+$line-2-width: 80%;
+
+@mixin background {
+  background-image: linear-gradient(90deg, $skeleton-color 0px, lighten($skeleton-color, 5%) 30px, $skeleton-color 60px);
+  background-size: calc(#{$skeleton-width} + #{$skeleton-offset});
+}
+
+.overlay-home .skeleton {
+
+
+  .image, .line {
+    @include background;
+    animation: refresh 2s linear;
+  }
+  
+  .image {
+    height: $image-height;
+  }
+  
+  .line {
+    height: $line-height;
+    
+    &:first-child {
+      width: $line-1-width;
+    }
+    
+    &:last-child {
+      width: $line-2-width;
+    }
+  } 
+}
+
+@keyframes refresh {
+  0% {
+    background-position: calc(-#{$skeleton-offset});
+    width: 320px/*$skeleton-width*/;
+    z-index: 110;
+  }
+    
+  98% {
+    background-position: $skeleton-width; 
+    width: 320px; 
+  }
+  100% {
+    background-position: 0px; 
+    width: 0;
+    z-index: -1;
+  }
+}
