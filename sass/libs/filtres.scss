@@ -53,12 +53,11 @@
     }
 }
 
-.filtres .petitsb:hover {
+.petitsb:hover, .petitsb:focus, .petitsb:active {
 background-color: #d9c6f0;
 }
-
-.filtres .petitsb:active {
-    background-color: #d9c6f0;
+.petitsb.clicked{
+    pointer-events:inherit;
 }
 
 @media (max-width: 600px) {
