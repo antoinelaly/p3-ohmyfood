@@ -75,35 +75,40 @@ img {
   vertical-align: middle;
 }
 
-/* gradient */
-:root {
+.coeurrose {
   position: relative;
-  --icon-heart: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z'%3E%3C/path%3E%3C/svg%3E");
+  top: 10px;
 }
 
-.with-icon--gradient {
+.coeurrose-old {
+  position: relative;
+  top: 30px;
+}
+
+.coeurrose .fa-heart, .coeurrose-old .fa-heart {
   position: absolute;
+  z-index: 3;
+}
+
+.coeurrose .fas.fa-heart, .coeurrose-old .fas.fa-heart {
+  color: #FF79DA;
   z-index: 1;
-  --icon-color: linear-gradient(#FF79DA 0%, #9356DC 100%); 
+}
+.fa-gradient {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: transparent;
+ 
+  -webkit-text-fill-color: transparent;
 }
 
-.with-icon:before {
-  display: flex;
-  width: 1.3rem;
-  height: 1.3rem;
-  margin-right: 1ch;
-  content: var(--icon-heart);
-}
-
-@supports (mask-size: cover) or (-webkit-mask-size: cover){
-  .with-icon:before {
-      content: '';
-      mask: var(--icon-heart) /*no-repeat center*/;
-      -webkit-mask: var(--icon-heart) no-repeat /*center*/;
-      mask-size: cover;
-      -webkit-mask-size: cover;
-      background: var(--icon-color);
-  }
+.coeurrose .overlay, .coeurrose-old .overlay {
+  position: absolute;
+  top: -15px/*-25px*/;
+  width: 15px;
+  height: 30px/*50px*/;
+  background: #fefefe;
+  z-index: 2;
+  animation: fill .5s ease;
 }
 
 .coeurrose:hover .overlay, .coeurrose-old:hover .overlay {
@@ -131,3 +136,13 @@ img {
   100% { opacity: 0; }
 }
 
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}

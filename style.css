@@ -222,7 +222,7 @@ img {
 .fa-gradient {
   background: linear-gradient(#FF79DA, #9356DC);
   color: transparent;
-  -webkit-background-clip: text;
+  /*-webkit-background-clip: text;*/
   -webkit-text-fill-color: transparent;
 }
 
