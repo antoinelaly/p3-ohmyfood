@@ -70,16 +70,13 @@ nav {
   flex-wrap: wrap;
   padding: 10px 25px 25px;
 }
-
 .filtres .letitre {
   display: flex;
   padding-right: 20px;
 }
-
 .filtres .letitre h3 {
   padding-top: 35px;
 }
-
 .filtres .petitsb {
   display: flex;
   border: solid #f6f6f6;
@@ -89,31 +86,25 @@ nav {
   padding: 15px;
   margin: 15px;
 }
-
-.filtres .petitsb:hover {
+.filtres .petitsb :hover, .filtres .petitsb :active {
   background-color: #d9c6f0;
 }
-
-.petitsb .fas {
+.filtres .petitsb .fas {
   color: grey;
   padding: 7px;
   position: relative;
   left: -10px;
 }
-
-.filtres .petitsb:hover .fas {
+.filtres .petitsb :hover .fas {
   color: #9356DC;
 }
-
-.petitsb p {
+.filtres .petitsb p {
   padding: 6px;
 }
-
-.petitsb .button {
+.filtres .petitsb .button {
   position: relative;
   background-color: #9356DC;
   border-radius: 50%;
-  /*padding: 5px 15px;*/
   padding: 5px 8px;
   margin: 5px;
   color: #fff;
