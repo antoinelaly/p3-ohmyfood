@@ -70,8 +70,9 @@ nav {
   position: absolute;
   z-index: 0;
   background: #fefefe;
-  animation: revealpage 3s linear;
-  display: grid;
+  animation: revealpage 2s linear;
+  display: flex;
+  flex-direction: column;
   place-items: center;
   margin: 0;
   min-height: 100vh;
@@ -102,19 +103,24 @@ nav {
   }
 }
 /* skeleton */
+.overlay-home .skeleton {
+  padding-top: 20px;
+}
 .overlay-home .skeleton .image, .overlay-home .skeleton .line {
   background-image: linear-gradient(90deg, #e0e0e0 0px, #ededed 30px, #e0e0e0 60px);
-  background-size: calc(320px + 100px);
-  animation: refresh 3s linear;
+  background-size: calc(220px + 100px);
+  animation: refresh 2s linear;
 }
 .overlay-home .skeleton .image {
-  height: 150px;
+  height: 50px;
 }
 .overlay-home .skeleton .line {
-  height: 16px;
+  height: 20px;
 }
 .overlay-home .skeleton .line:first-child {
   width: 50%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .overlay-home .skeleton .line:last-child {
   width: 80%;
@@ -125,23 +131,21 @@ nav {
 @keyframes refresh {
   0% {
     background-position: calc(-100px);
-    width: 320px;
+    width: 220px;
     z-index: 110;
     opacity: 1;
   }
   98% {
-    background-position: 320px;
-    width: 320px;
+    background-position: 220px;
+    width: 220px;
     z-index: 110;
     opacity: 1;
   }
   99%, 100% {
     background-position: 0;
-    /*width: 0;*/
     z-index: -1;
     display: none;
     opacity: 0;
-    /*height:0;*/
   }
 }
 .filtres {
@@ -177,6 +181,7 @@ nav {
   color: #9356DC;
 }
 .filtres .petitsb p {
+  display: flex;
   padding: 6px;
   align-items: center;
 }
