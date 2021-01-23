@@ -70,7 +70,11 @@ nav {
   position: absolute;
   z-index: 0;
   background: #fefefe;
-  animation: revealpage 2s linear;
+  animation: revealpage 3s linear;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  min-height: 100vh;
 }
 
 @keyframes revealpage {
@@ -79,29 +83,29 @@ nav {
     display: inline;
     opacity: 1;
     width: 98.5vw;
-    height: 90vh;
+    height: 100vh;
   }
-  98% {
+  96% {
     z-index: 100;
     display: inline;
     opacity: 1;
     width: 98.5vw;
-    height: 99vh;
+    height: 100vh;
   }
   100% {
     z-index: -1;
     display: none;
     opacity: 0;
-    width: 0;
-    height: 0;
-    overflow: hidden;
+    /*width:0;
+    height:0;
+    overflow:hidden;*/
   }
 }
 /* skeleton */
 .overlay-home .skeleton .image, .overlay-home .skeleton .line {
   background-image: linear-gradient(90deg, #e0e0e0 0px, #ededed 30px, #e0e0e0 60px);
   background-size: calc(320px + 100px);
-  animation: refresh 2s linear;
+  animation: refresh 3s linear;
 }
 .overlay-home .skeleton .image {
   height: 150px;
@@ -114,6 +118,8 @@ nav {
 }
 .overlay-home .skeleton .line:last-child {
   width: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 @keyframes refresh {
@@ -121,15 +127,21 @@ nav {
     background-position: calc(-100px);
     width: 320px;
     z-index: 110;
+    opacity: 1;
   }
   98% {
     background-position: 320px;
     width: 320px;
+    z-index: 110;
+    opacity: 1;
   }
-  100% {
-    background-position: 0px;
-    width: 0;
+  99%, 100% {
+    background-position: 0;
+    /*width: 0;*/
     z-index: -1;
+    display: none;
+    opacity: 0;
+    /*height:0;*/
   }
 }
 .filtres {
