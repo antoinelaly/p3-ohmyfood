@@ -1,0 +1,71 @@
+$gris-claire: #f6f6f6;
+
+nav .menumenu {
+    display: flex;
+    justify-content:space-around;
+    .logo {
+        flex: 2;
+        padding-right: 30px;
+    }
+    .fleche {
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+}
+
+.lerestau figure {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    background-color: $gris-claire;
+    figcaption {
+        display: flex;
+        background-color: $gris-claire;
+        border-radius: 50px 50px 0px 0px;
+        padding: 30px 20px 0px;
+        top: -40px;
+        position: relative;
+        .ledesc {
+            flex: 2;
+        }
+        .lecoeur {
+            display: flex;
+            padding-right: 25px;
+            .overlay {
+                background-color: $gris-claire;
+            }
+        }
+    }
+}
+
+.plats {
+    background-color: $gris-claire;
+    .titre { 
+        padding: 0px 20px 20px;
+    }
+    .plat {
+        display: flex;
+        background-color: #fff;
+        padding: 12px;
+        margin: 12px;
+        border-radius: 20px;
+        box-shadow: 0 7px 15px 1px#e8e8e8;
+        .desc {
+            flex: 2;
+        }
+        .commande {
+            display: flex;
+            align-self:flex-end;
+            .valida {
+                align-self:flex-end;
+            }
+
+        }
+    }
+
+}
+
+section.commander {
+    justify-content: center;
+    text-align: center;
+}
