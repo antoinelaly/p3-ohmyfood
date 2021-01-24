@@ -58,33 +58,60 @@ nav .menumenu {
         border: none;
         cursor: pointer;
         &:hover .commande {
-            transform: translateX(-25px);
-            transition: .3s linear;
+            transform: translateX(-65px);
+            transition: .8s ease-in-out;
             position: relative;
+            .points {
+                color: #000;
+                transition: .8s linear;
+            }
+            .valida {
+                i {
+                    animation-name:in;
+                    animation-duration:.8s;
+                    /* Safari and Chrome: */
+                    -webkit-animation-name:in;
+                    -webkit-animation-duration:.9s;
+                    transform-origin: center center;
+                }
+            }
         }
         .desc {
-            flex: 0 0 260px;
+            flex: 0 0 258px;
             padding: 12px 0 12px 12px;
         }
         .commande {
-            transform: translateY(0px);
-            transition: 0.3s linear;
-            animation-duration: 2s;
+            transition: .8s ease-in-out;
             display: flex;
             position: relative;
             cursor: pointer;
             .tarif {
-                padding: 5px 35px 5px 0;
+                display: flex;
+                padding: 5px 17px 12px 0;
+                background-color: #fff;
+                margin-top: auto;
             }
             .valida {
+                display: flex;
                 position: relative;
-                background-color: greenyellow;
-                scale: -10;
+                background-color: #99E2D0;
                 height: 63px;
-                width: 30px;
+                width: 58px;
+                i {
+                    display: flex;
+                    color: #fff;
+                    font-size: 20px;
+                    align-items: center;
+                    padding: 18px;
+                }
             }
             .points {
-                display: none;
+                display: flex;
+                color: #fff;
+                background-color: #fff;
+                margin-top: auto;
+                padding: 12px 8px 12px 2px;
+                margin: O;
             }
 
         }
@@ -95,4 +122,16 @@ nav .menumenu {
 section.commander {
     justify-content: center;
     text-align: center;
+}
+
+
+@keyframes in
+{
+from {transform: rotate(-180deg);}
+to   {transform: rotate(360deg);}
+}
+@-webkit-keyframes in /* Safari and Chrome */
+{
+from {transform: rotate(-180deg);}
+to   {-webkit-transform: rotate(360deg);}
 }
