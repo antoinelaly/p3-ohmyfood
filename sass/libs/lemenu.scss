@@ -50,7 +50,6 @@ nav .menumenu {
         flex: 0 1 330px;
         position: relative;
         background-color: #fff;
-        padding: 12px;
         margin: 12px;
         border-radius: 20px;
         box-shadow: 0 7px 15px 1px#e8e8e8;
@@ -59,26 +58,33 @@ nav .menumenu {
         border: none;
         cursor: pointer;
         &:hover .commande {
-            transform: translateX(-50px);
+            transform: translateX(-25px);
+            transition: .3s linear;
             position: relative;
-            scale: 2;
         }
         .desc {
-            flex: 2;
+            flex: 0 0 260px;
+            padding: 12px 0 12px 12px;
         }
         .commande {
-            transform: translateX(50px);
+            transform: translateY(0px);
             transition: 0.3s linear;
+            animation-duration: 2s;
             display: flex;
-            align-self:flex-end;
             position: relative;
             cursor: pointer;
+            .tarif {
+                padding: 5px 35px 5px 0;
+            }
             .valida {
-                align-self:flex-end;
+                position: relative;
                 background-color: greenyellow;
                 scale: -10;
-                height: 100%;
+                height: 63px;
                 width: 30px;
+            }
+            .points {
+                display: none;
             }
 
         }
