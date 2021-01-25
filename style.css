@@ -297,11 +297,12 @@ figure .nouveau {
   top: -45px;
 }
 
-img {
-  height: auto;
-  width: 100%;
-  max-width: 100%;
-  vertical-align: middle;
+figure img {
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  object-position: center;
 }
 
 .coeurrose {
@@ -354,7 +355,7 @@ img {
 .coeurrose .overlay, .coeurrose-old .overlay {
   position: absolute;
   top: -13px;
-  width: 18px;
+  width: 20px;
   height: 32px;
   background: #fefefe;
   z-index: 2;
@@ -513,6 +514,9 @@ nav .menumenu .fleche {
   height: 27px;
   border-bottom: 2px solid #99E2D0;
   position: absolute;
+}
+.plats .titre.titred {
+  padding-top: 30px;
 }
 .plats .plat {
   display: flex;
