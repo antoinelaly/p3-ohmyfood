@@ -49,6 +49,7 @@ nav .menumenu {
     display: flex;
     flex-wrap: wrap;
     background-color: $gris-claire;
+    justify-content: space-around;
     .titre { 
         display: flex;
         padding: 0px 20px 20px;
@@ -97,7 +98,7 @@ nav .menumenu {
             }
         }
         .desc {
-            flex: 0 0 80%;
+            flex: 1 0 77%;
             padding: 12px 0 12px 12px;
         }
         .commande {
@@ -106,12 +107,16 @@ nav .menumenu {
             position: relative;
             height: 100%;
             background-color: #fff;
+            flex: 0 0 28%;
             cursor: pointer;
             .tarif {
                 display: flex;
-                padding: 5px 17px 12px 0;
+                padding: 5px 18px 12px 10px;
                 background-color: #fff;
                 margin-top: auto;
+                @media (max-width: 370px) {
+                    padding: 5px 14px 12px 2px;
+                    }
             }
             .valida {
                 display: flex;
@@ -124,7 +129,7 @@ nav .menumenu {
                     color: #fff;
                     font-size: 20px;
                     align-items: center;
-                    padding: 20px;
+                    padding: 22px;
                 }
             }
             .points {
@@ -133,7 +138,7 @@ nav .menumenu {
                 background-color: #fff;
                 margin-top: auto;
                 padding: 12px 4px 12px 2px;
-                margin: O;
+                margin: 0;
             }
 
         }
