@@ -514,7 +514,7 @@ nav .menumenu .fleche {
   animation-duration: 0.8s;
   /* Safari and Chrome: */
   -webkit-animation-name: in;
-  -webkit-animation-duration: 0.9s;
+  -webkit-animation-duration: 0.8s;
   transform-origin: center center;
 }
 .plats .plat .desc {
@@ -522,7 +522,7 @@ nav .menumenu .fleche {
   padding: 12px 0 12px 12px;
 }
 .plats .plat .commande {
-  transition: 0.8s ease-in-out;
+  transition: 0.6s ease-in-out;
   display: flex;
   position: relative;
   cursor: pointer;
@@ -563,18 +563,20 @@ section.commander {
 
 @keyframes in {
   from {
-    transform: rotate(-180deg);
+    transform: rotate(0deg);
+    transition-delay: 500ms;
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(3turn);
   }
 }
 @-webkit-keyframes in /* Safari and Chrome */ {
   from {
-    transform: rotate(-180deg);
+    transform: rotate(0deg);
+    transition-delay: 500ms;
   }
   to {
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(3turn);
   }
 }
 body {
