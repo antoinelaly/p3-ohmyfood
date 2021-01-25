@@ -234,7 +234,7 @@ section.parent {
   width: 90vw;
 }
 
-.main figure {
+.main a.lafigure {
   display: flex;
   flex-flow: column;
   flex: 1 0 220px;
@@ -242,6 +242,9 @@ section.parent {
   background-color: #fff;
   border-radius: 18px;
   box-shadow: 0 7px 15px 1px #D3D3D3;
+}
+.main a.lafigure figure {
+  margin: 0;
 }
 
 .main figure img {
@@ -314,7 +317,7 @@ img {
 .coeurrose .fa-heart, .coeurrose-old .fa-heart {
   position: absolute;
   z-index: 3;
-  /*left: 2px;*/
+  font-weight: 200;
   font-size: 20px;
 }
 
@@ -593,7 +596,7 @@ nav .menumenu .fleche {
   background-color: #fff;
   margin-top: auto;
   padding: 12px 4px 12px 2px;
-  margin: O;
+  margin: 0;
 }
 
 section.commander {
