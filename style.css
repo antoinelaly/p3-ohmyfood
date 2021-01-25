@@ -497,12 +497,21 @@ nav .menumenu .fleche {
   display: flex;
   flex-wrap: wrap;
   background-color: #f6f6f6;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .plats .titre {
   display: flex;
-  padding: 0px 20px 20px;
-  align-items: center;
+  padding: 30px 10px 10px 30px;
+}
+.plats .titre h5 {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.plats .titre .line {
+  width: 20px;
+  height: 47px;
+  border-bottom: 2px solid black;
+  position: absolute;
 }
 .plats .plat {
   display: flex;
@@ -534,12 +543,36 @@ nav .menumenu .fleche {
 .plats .plat:nth-child(5) {
   animation-delay: 2s;
 }
+.plats .plat:nth-child(6) {
+  animation-delay: 2.2s;
+}
+.plats .plat:nth-child(7) {
+  animation-delay: 2.4s;
+}
+.plats .plat:nth-child(8) {
+  animation-delay: 2.6s;
+}
+.plats .plat:nth-child(9) {
+  animation-delay: 2.8s;
+}
+.plats .plat:nth-child(10) {
+  animation-delay: 3s;
+}
+.plats .plat:nth-child(11) {
+  animation-delay: 3.2s;
+}
+.plats .plat:nth-child(12) {
+  animation-delay: 3.4s;
+}
+.plats .plat:nth-child(13) {
+  animation-delay: 3.6s;
+}
 .plats .plat:hover .commande {
   transform: translateX(-65px);
   transition: 0.8s ease-in-out;
   position: relative;
 }
-.plats .plat:hover .commande .points, .plats .plat:hover .commande .points2 {
+.plats .plat:hover .commande .points, .plats .plat:hover .commande .points {
   color: #000;
   transition: 0.8s linear;
 }

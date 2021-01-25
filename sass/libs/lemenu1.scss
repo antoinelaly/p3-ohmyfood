@@ -49,20 +49,11 @@ nav .menumenu {
     display: flex;
     flex-wrap: wrap;
     background-color: $gris-claire;
-    justify-content: space-between;
+    justify-content: space-around;
     .titre { 
         display: flex;
-        padding: 30px 10px 10px 30px;
-        h5 {
-            text-transform: uppercase;
-            font-weight: 200;
-        }
-        .line{
-            width: 20px;
-            height: 47px;
-            border-bottom: 2px solid black;
-            position: absolute;
-            }
+        padding: 0px 20px 20px;
+        align-items: center;
     }
     .plat {
         display: flex;
@@ -81,7 +72,7 @@ nav .menumenu {
         animation: showItem .8s;
         animation-fill-mode: both;
         animation-delay: .1s;
-        @for $i from 2 to 14 {
+        @for $i from 2 to 6 {
             &:nth-child(#{$i}) {
                 animation-delay: #{1 + $i * 0.2}s;
             }
@@ -90,7 +81,7 @@ nav .menumenu {
             transform: translateX(-65px);
             transition: .8s ease-in-out;
             position: relative;
-            .points, .points {
+            .points {
                 color: #000;
                 transition: .8s linear;
             }
@@ -147,22 +138,6 @@ nav .menumenu {
                 background-color: #fff;
                 margin-top: auto;
                 padding: 12px 4px 12px 2px;
-                margin: 0;
-            }
-            .point {
-                display: flex;
-                color: #fff;
-                background-color: #fff;
-                margin-top: auto;
-                padding: 12px 4px 12px 2px;
-                margin: 0;
-            }
-            .points2 {
-                display: flex;
-                color: #fff;
-                background-color: #fff;
-                margin-top: auto;
-                padding: 24px 4px 12px 2px;
                 margin: 0;
             }
 
