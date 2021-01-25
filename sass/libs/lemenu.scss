@@ -81,7 +81,7 @@ nav .menumenu {
             transform: translateX(-65px);
             transition: .8s ease-in-out;
             position: relative;
-            .points {
+            .points, .points2 {
                 color: #000;
                 transition: .8s linear;
             }
@@ -138,6 +138,22 @@ nav .menumenu {
                 background-color: #fff;
                 margin-top: auto;
                 padding: 12px 4px 12px 2px;
+                margin: 0;
+            }
+            .point {
+                display: flex;
+                color: #fff;
+                background-color: #fff;
+                margin-top: auto;
+                padding: 12px 4px 12px 2px;
+                margin: 0;
+            }
+            .points2 {
+                display: flex;
+                color: #fff;
+                background-color: #fff;
+                margin-top: auto;
+                padding: 24px 4px 12px 2px;
                 margin: 0;
             }
 

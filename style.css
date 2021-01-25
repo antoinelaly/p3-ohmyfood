@@ -539,7 +539,7 @@ nav .menumenu .fleche {
   transition: 0.8s ease-in-out;
   position: relative;
 }
-.plats .plat:hover .commande .points {
+.plats .plat:hover .commande .points, .plats .plat:hover .commande .points2 {
   color: #000;
   transition: 0.8s linear;
 }
@@ -596,6 +596,22 @@ nav .menumenu .fleche {
   background-color: #fff;
   margin-top: auto;
   padding: 12px 4px 12px 2px;
+  margin: 0;
+}
+.plats .plat .commande .point {
+  display: flex;
+  color: #fff;
+  background-color: #fff;
+  margin-top: auto;
+  padding: 12px 4px 12px 2px;
+  margin: 0;
+}
+.plats .plat .commande .points2 {
+  display: flex;
+  color: #fff;
+  background-color: #fff;
+  margin-top: auto;
+  padding: 24px 4px 12px 2px;
   margin: 0;
 }
 
