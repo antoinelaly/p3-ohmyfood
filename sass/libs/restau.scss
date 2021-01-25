@@ -41,7 +41,7 @@ padding-bottom: 15px;
 
 .restaurants figcaption .ledesc {
   flex: 3;
-  padding: 15px;
+  padding: 15px 0 15px 15px;
 }
 
 .restaurants figcaption .ledesc p {
@@ -51,10 +51,10 @@ padding-bottom: 15px;
 figure .nouveau {
   display: flex;
   position: relative;
-  top:-130px;
+  top:-120px;
   padding: 6px 10px;
   background: #99E2D0;
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   font-size: 12px;
   font-weight: 600;
   color: #008766;
@@ -64,11 +64,16 @@ figure .nouveau {
 .restaurants figcaption .lecoeur {
   display: flex;
   position: relative;
-  top:-35px;
+  top:-50px;
   flex-direction: column;
   flex: 1;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
+}
+
+.restaurants figcaption .lecoeur.nouv {
+  top:-45px;
 }
 
 img {

@@ -50,11 +50,13 @@ nav .menumenu {
     flex-wrap: wrap;
     background-color: $gris-claire;
     .titre { 
+        display: flex;
         padding: 0px 20px 20px;
+        align-items: center;
     }
     .plat {
         display: flex;
-        flex: 0 1 330px;
+        flex: 0 1 360px;
         position: relative;
         background-color: #fff;
         margin: 12px;
@@ -95,13 +97,15 @@ nav .menumenu {
             }
         }
         .desc {
-            flex: 0 0 258px;
+            flex: 0 0 80%;
             padding: 12px 0 12px 12px;
         }
         .commande {
             transition: .6s ease-in-out;
             display: flex;
             position: relative;
+            height: 100%;
+            background-color: #fff;
             cursor: pointer;
             .tarif {
                 display: flex;
@@ -113,14 +117,14 @@ nav .menumenu {
                 display: flex;
                 position: relative;
                 background-color: #99E2D0;
-                height: 63px;
-                width: 58px;
+                height: 100%;
+                width: 62px;
                 i {
                     display: flex;
                     color: #fff;
                     font-size: 20px;
                     align-items: center;
-                    padding: 18px;
+                    padding: 20px;
                 }
             }
             .points {
@@ -128,7 +132,7 @@ nav .menumenu {
                 color: #fff;
                 background-color: #fff;
                 margin-top: auto;
-                padding: 12px 8px 12px 2px;
+                padding: 12px 4px 12px 2px;
                 margin: O;
             }
 

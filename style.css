@@ -259,7 +259,7 @@ section.parent {
 
 .restaurants figcaption .ledesc {
   flex: 3;
-  padding: 15px;
+  padding: 15px 0 15px 15px;
 }
 
 .restaurants figcaption .ledesc p {
@@ -269,10 +269,10 @@ section.parent {
 figure .nouveau {
   display: flex;
   position: relative;
-  top: -130px;
+  top: -120px;
   padding: 6px 10px;
   background: #99E2D0;
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   font-size: 12px;
   font-weight: 600;
   color: #008766;
@@ -282,11 +282,16 @@ figure .nouveau {
 .restaurants figcaption .lecoeur {
   display: flex;
   position: relative;
-  top: -35px;
+  top: -50px;
   flex-direction: column;
   flex: 1;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
+}
+
+.restaurants figcaption .lecoeur.nouv {
+  top: -45px;
 }
 
 img {
@@ -491,11 +496,13 @@ nav .menumenu .fleche {
   background-color: #f6f6f6;
 }
 .plats .titre {
+  display: flex;
   padding: 0px 20px 20px;
+  align-items: center;
 }
 .plats .plat {
   display: flex;
-  flex: 0 1 330px;
+  flex: 0 1 360px;
   position: relative;
   background-color: #fff;
   margin: 12px;
@@ -542,13 +549,15 @@ nav .menumenu .fleche {
   transition-delay: 2s;
 }
 .plats .plat .desc {
-  flex: 0 0 258px;
+  flex: 0 0 80%;
   padding: 12px 0 12px 12px;
 }
 .plats .plat .commande {
   transition: 0.6s ease-in-out;
   display: flex;
   position: relative;
+  height: 100%;
+  background-color: #fff;
   cursor: pointer;
 }
 .plats .plat .commande .tarif {
@@ -561,22 +570,22 @@ nav .menumenu .fleche {
   display: flex;
   position: relative;
   background-color: #99E2D0;
-  height: 63px;
-  width: 58px;
+  height: 100%;
+  width: 62px;
 }
 .plats .plat .commande .valida i {
   display: flex;
   color: #fff;
   font-size: 20px;
   align-items: center;
-  padding: 18px;
+  padding: 20px;
 }
 .plats .plat .commande .points {
   display: flex;
   color: #fff;
   background-color: #fff;
   margin-top: auto;
-  padding: 12px 8px 12px 2px;
+  padding: 12px 4px 12px 2px;
   margin: O;
 }
 
@@ -620,6 +629,11 @@ body, h2, h3, h4, p {
 header, section, footer {
   max-width: 1800px;
   margin: 0 auto !important;
+}
+
+a:link, a {
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
