@@ -61,6 +61,14 @@ nav .menumenu {
         display: flex;
         padding: 0 10px 5px 15px;
         margin-bottom: 10px;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        opacity: 0;
+        -moz-animation: glissement 2s linear forwards 2s;
+        -webkit-animation: glissement 2s linear forwards 2s;
+        -o-animation: glissement 2s linear forwards 2s;
+        -ms-animation: glissement 2s linear forwards 2s;
+        animation: glissement 2s linear forwards 2s;
         h5 {
             text-transform: uppercase;
             font-weight: 200;
@@ -209,4 +217,26 @@ to   {transform: rotate(3turn);}
 {
 from {transform: rotate(0deg);transition-delay: 1s;}
 to   {-webkit-transform: rotate(3turn);}
+}
+
+
+@-moz-keyframes glissement {
+    0%  {opacity:0;}
+    100% {opacity:1;}
+}
+@-webkit-keyframes glissement {
+    0%  {opacity:0;}
+    100% {opacity:1;}
+}
+@-o-keyframes glissement {
+    0%  {opacity:0;}
+    100% {opacity:1;}
+}
+@-ms-keyframes glissement {
+    0%  {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes glissement {
+    0%  {opacity:0;}
+    100% {opacity:1;}
 }
