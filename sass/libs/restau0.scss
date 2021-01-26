@@ -1,30 +1,35 @@
-.restaurants {
+section.parent {
+  display: flex;
+  background-color: #f6f6f6;
+}
+
+.main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 60px;
-  background-color: #f6f6f6;
-  h3 {
-    padding-top: 50px;
-    padding-bottom: 15px;
-      width: 90vw;
-    }
-  a.lafigure  {
-    display: flex;
-    flex-flow: column;
-    flex: 1 0 220px;
-    margin: 10px 20px;
-    background-color: #fff;
-    border-radius: 18px;
-    box-shadow: 0 7px 15px 1px#D3D3D3;
-    figure {
-      margin: 0;
-    }
+}
+
+.restaurants h3 {
+padding-top: 50px;
+padding-bottom: 15px;
+  width: 90vw;
+}
+
+.main a.lafigure  {
+  display: flex;
+  flex-flow: column;
+  flex: 1 0 220px;
+  margin: 10px 20px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 7px 15px 1px#D3D3D3;
+  figure {
+    margin: 0;
   }
 }
 
-
-.restaurants figure img {
+.main figure img {
   object-fit: cover;
   position: relative;
   overflow: hidden;
@@ -36,13 +41,15 @@
 
 .restaurants figcaption {
   display: flex;
-  .ledesc {
-    flex: 3;
-    padding: 15px 0 15px 15px;
-    p {
-      padding: 5px 0px;
-    }
-  }
+}
+
+.restaurants figcaption .ledesc {
+  flex: 3;
+  padding: 15px 0 15px 15px;
+}
+
+.restaurants figcaption .ledesc p {
+  padding: 5px 0px;
 }
 
 figure .nouveau {
@@ -51,6 +58,7 @@ figure .nouveau {
   top:-120px;
   padding: 6px 10px;
   background: #99E2D0;
+  /*margin-right: 10px;*/
   font-size: 12px;
   font-weight: 600;
   color: #008766;
@@ -68,27 +76,35 @@ figure .nouveau {
   margin-right: 10px;
 }
 
-.restaurants figcaption {
-  .lecoeur.nouv {
-      top:-45px;
-  }
-  .coeurrose {
-    position: relative;
-    top: 10px;
-  }
-  .coeurrose-old {
-    position: relative;
-    top: 30px;
-  }
-  .coeurrose .fa-heart, .coeurrose-old .fa-heart {
-    position: absolute;
-    z-index: 3;
-    font-weight: 200;
-    font-size: 20px;
-  }
+.restaurants figcaption .lecoeur.nouv {
+  top:-45px;
+}
+
+.lerestau figure img {
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  object-position: center;
 }
 
 
+.coeurrose {
+  position: relative;
+  top: 10px;
+}
+
+.coeurrose-old {
+  position: relative;
+  top: 30px;
+}
+
+.coeurrose .fa-heart, .coeurrose-old .fa-heart {
+  position: absolute;
+  z-index: 3;
+  font-weight: 200;
+  font-size: 20px;
+}
 
 /* gradient */
 :root {

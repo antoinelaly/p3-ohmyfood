@@ -18,6 +18,13 @@ nav .menumenu {
     flex-flow: column;
     margin: 0;
     background-color: $gris-claire;
+    img {
+        object-fit: cover;
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+        object-position: center;
+      }
     figcaption {
         display: flex;
         background-color: $gris-claire;

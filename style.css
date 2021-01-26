@@ -205,25 +205,19 @@ nav {
     left: -40px;
   }
 }
-section.parent {
-  display: flex;
-  background-color: #f6f6f6;
-}
-
-.main {
+.restaurants {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 60px;
+  background-color: #f6f6f6;
 }
-
 .restaurants h3 {
   padding-top: 50px;
   padding-bottom: 15px;
   width: 90vw;
 }
-
-.main a.lafigure {
+.restaurants a.lafigure {
   display: flex;
   flex-flow: column;
   flex: 1 0 220px;
@@ -232,11 +226,11 @@ section.parent {
   border-radius: 18px;
   box-shadow: 0 7px 15px 1px #D3D3D3;
 }
-.main a.lafigure figure {
+.restaurants a.lafigure figure {
   margin: 0;
 }
 
-.main figure img {
+.restaurants figure img {
   object-fit: cover;
   position: relative;
   overflow: hidden;
@@ -249,12 +243,10 @@ section.parent {
 .restaurants figcaption {
   display: flex;
 }
-
 .restaurants figcaption .ledesc {
   flex: 3;
   padding: 15px 0 15px 15px;
 }
-
 .restaurants figcaption .ledesc p {
   padding: 5px 0px;
 }
@@ -265,7 +257,6 @@ figure .nouveau {
   top: -120px;
   padding: 6px 10px;
   background: #99E2D0;
-  /*margin-right: 10px;*/
   font-size: 12px;
   font-weight: 600;
   color: #008766;
@@ -286,26 +277,15 @@ figure .nouveau {
 .restaurants figcaption .lecoeur.nouv {
   top: -45px;
 }
-
-.lerestau figure img {
-  object-fit: cover;
-  position: relative;
-  overflow: hidden;
-  height: 250px;
-  object-position: center;
-}
-
-.coeurrose {
+.restaurants figcaption .coeurrose {
   position: relative;
   top: 10px;
 }
-
-.coeurrose-old {
+.restaurants figcaption .coeurrose-old {
   position: relative;
   top: 30px;
 }
-
-.coeurrose .fa-heart, .coeurrose-old .fa-heart {
+.restaurants figcaption .coeurrose .fa-heart, .restaurants figcaption .coeurrose-old .fa-heart {
   position: absolute;
   z-index: 3;
   font-weight: 200;
@@ -396,6 +376,13 @@ nav .menumenu .fleche {
   flex-flow: column;
   margin: 0;
   background-color: #f6f6f6;
+}
+.lerestau figure img {
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  object-position: center;
 }
 .lerestau figure figcaption {
   display: flex;

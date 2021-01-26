@@ -1,94 +1,100 @@
 .restaurants {
   display: flex;
+  background-color: #f6f6f6;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 60px;
-  background-color: #f6f6f6;
   h3 {
     padding-top: 50px;
     padding-bottom: 15px;
       width: 90vw;
     }
-  a.lafigure  {
-    display: flex;
-    flex-flow: column;
-    flex: 1 0 220px;
-    margin: 10px 20px;
-    background-color: #fff;
-    border-radius: 18px;
-    box-shadow: 0 7px 15px 1px#D3D3D3;
+    a.lafigure  {
+      display: flex;
+      flex-flow: column;
+      flex: 1 0 220px;
+      margin: 10px 20px;
+      background-color: #fff;
+      border-radius: 18px;
+      box-shadow: 0 7px 15px 1px#D3D3D3;
+    }
     figure {
       margin: 0;
+      img {
+        object-fit: cover;
+        position: relative;
+        overflow: hidden;
+        height: 170px;
+        width: 100%;
+        border-radius: 16px 16px 0px 0px;
+        object-position: 40% 60%;
+      }
+      figcaption {
+        display: flex;
+
+        .lecoeur {
+          display: flex;
+          position: relative;
+          top:-50px;
+          flex-direction: column;
+          flex: 1;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10px;
+        }
+        .lecoeur.nouv {
+          top:-45px;
+        }
+        .ledesc {
+          flex: 3;
+          padding: 15px 0 15px 15px;
+          p {
+            padding: 5px 0px;
+          }
+        }
+      }
+      .nouveau {
+        display: flex;
+        position: relative;
+        top:-120px;
+        padding: 6px 10px;
+        background: #99E2D0;
+        /*margin-right: 10px;*/
+        font-size: 12px;
+        font-weight: 600;
+        color: #008766;
+        letter-spacing: .5px;
+      }
     }
-  }
 }
 
 
-.restaurants figure img {
-  object-fit: cover;
+
+figure 
+
+.restaurants figcaption 
+
+.restaurants figcaption 
+
+.lerestau figure 
+
+
+.coeurrose {
   position: relative;
-  overflow: hidden;
-  height: 170px;
-  width: 100%;
-  border-radius: 16px 16px 0px 0px;
-  object-position: 40% 60%;
+  top: 10px;
 }
 
-.restaurants figcaption {
-  display: flex;
-  .ledesc {
-    flex: 3;
-    padding: 15px 0 15px 15px;
-    p {
-      padding: 5px 0px;
-    }
-  }
-}
-
-figure .nouveau {
-  display: flex;
+.coeurrose-old {
   position: relative;
-  top:-120px;
-  padding: 6px 10px;
-  background: #99E2D0;
-  font-size: 12px;
-  font-weight: 600;
-  color: #008766;
-  letter-spacing: .5px;
+  top: 30px;
 }
 
-.restaurants figcaption .lecoeur {
-  display: flex;
-  position: relative;
-  top:-50px;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
+.coeurrose .fa-heart, .coeurrose-old .fa-heart {
+  position: absolute;
+  z-index: 3;
+  font-weight: 200;
+  font-size: 20px;
 }
-
-.restaurants figcaption {
-  .lecoeur.nouv {
-      top:-45px;
-  }
-  .coeurrose {
-    position: relative;
-    top: 10px;
-  }
-  .coeurrose-old {
-    position: relative;
-    top: 30px;
-  }
-  .coeurrose .fa-heart, .coeurrose-old .fa-heart {
-    position: absolute;
-    z-index: 3;
-    font-weight: 200;
-    font-size: 20px;
-  }
-}
-
-
 
 /* gradient */
 :root {
