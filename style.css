@@ -279,13 +279,6 @@ figure .nouveau {
   top: -45px;
 }
 
-/*.lerestau figure img {
-  object-fit: cover;
-  position: relative;
-  overflow: hidden;
-  height: 250px;
-  object-position: center;
-}*/
 .coeurrose {
   position: relative;
   top: 10px;
@@ -369,6 +362,10 @@ figure .nouveau {
     opacity: 0;
   }
 }
+.commander {
+  padding-bottom: 30px;
+}
+
 nav .menumenu {
   display: flex;
   justify-content: space-around;
@@ -392,7 +389,7 @@ nav .menumenu .fleche {
   object-fit: cover;
   position: relative;
   overflow: hidden;
-  height: 210px;
+  height: 220px;
   object-position: center;
 }
 .lerestau figure figcaption {
@@ -442,7 +439,7 @@ nav .menumenu .fleche {
   position: absolute;
 }
 .plats .titre.titred {
-  padding-top: 15px;
+  padding-top: 20px;
 }
 @media screen and (min-width: 800px) {
   .plats .titre.entrees {
