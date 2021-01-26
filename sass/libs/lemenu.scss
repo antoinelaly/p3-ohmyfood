@@ -59,25 +59,25 @@ nav .menumenu {
     justify-content: space-between;
     .titre { 
         display: flex;
-        padding: 0 10px 10px 30px;
-        margin-bottom: 20px;
+        padding: 0 10px 5px 15px;
+        margin-bottom: 10px;
         h5 {
             text-transform: uppercase;
             font-weight: 200;
         }
         .line{
             width: 30px;
-            height: 27px;
+            height: 20px;
             border-bottom: 2px solid #99E2D0;
             position: absolute;
             }
     }
     .titre.titred {
-        padding-top: 30px;
+        padding-top: 15px;
     }
     @media screen and (min-width: 800px) {
         .titre.entrees {
-            padding-top: 30px;
+            padding-top: 15px;
         }
       }
     .plat {

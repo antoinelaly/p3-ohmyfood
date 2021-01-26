@@ -428,8 +428,8 @@ nav .menumenu .fleche {
 }
 .plats .titre {
   display: flex;
-  padding: 0 10px 10px 30px;
-  margin-bottom: 20px;
+  padding: 0 10px 5px 15px;
+  margin-bottom: 10px;
 }
 .plats .titre h5 {
   text-transform: uppercase;
@@ -437,16 +437,16 @@ nav .menumenu .fleche {
 }
 .plats .titre .line {
   width: 30px;
-  height: 27px;
+  height: 20px;
   border-bottom: 2px solid #99E2D0;
   position: absolute;
 }
 .plats .titre.titred {
-  padding-top: 30px;
+  padding-top: 15px;
 }
 @media screen and (min-width: 800px) {
   .plats .titre.entrees {
-    padding-top: 30px;
+    padding-top: 15px;
   }
 }
 .plats .plat {
