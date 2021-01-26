@@ -619,13 +619,6 @@ footer a, footer a:link {
 footer .logo {
   padding-bottom: 10px;
 }
-footer li a {
-  outline: none;
-  text-decoration: none;
-}
-footer li {
-  list-style: none;
-}
 footer .col {
   display: flex;
   flex-basis: calc(33.333% - 20px);
@@ -635,14 +628,22 @@ footer ul {
   flex-direction: column;
   padding-bottom: 25px;
 }
-footer li {
+footer ul li {
   padding-top: 5px;
   padding-bottom: 5px;
+  list-style: none;
 }
-footer .fa-utensils {
+footer ul li :first-child {
+  padding-bottom: 10px;
+}
+footer ul li a {
+  outline: none;
+  text-decoration: none;
+}
+footer ul li a .fa-utensils {
   padding: 0px 10px 0px 4px;
 }
-footer .fa-handshake {
+footer ul li a .fa-handshake {
   padding: 0px 8px 0px 0px;
 }
 
@@ -650,8 +651,6 @@ footer .fa-handshake {
   footer {
     display: flex;
     flex-direction: column;
-    /*padding-top: 30px;*/
-    padding-bottom: 30px;
   }
   footer ul {
     padding-bottom: 0px;
