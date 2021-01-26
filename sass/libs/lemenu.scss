@@ -191,8 +191,13 @@ section.commander {
     justify-content: center;
     text-align: center;
     background-color: $gris-claire;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-top: 10px;
+    .explo {
+        padding: 15px 40px;
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
 }
 
 @keyframes in
