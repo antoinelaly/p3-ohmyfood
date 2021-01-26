@@ -435,7 +435,7 @@ nav .menumenu .fleche {
   position: absolute;
 }
 .plats .titre.titred {
-  padding-top: 25px;
+  padding-top: 30px;
 }
 @media screen and (min-width: 800px) {
   .plats .titre.entrees {
