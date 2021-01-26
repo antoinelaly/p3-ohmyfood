@@ -68,6 +68,11 @@ nav .menumenu {
     .titre.titred {
         padding-top: 30px;
     }
+    @media screen and (min-width: 800px) {
+        .titre.entrees {
+            padding-top: 30px;
+        }
+      }
     .plat {
         display: flex;
         flex: 0 1 360px;

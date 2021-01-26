@@ -457,6 +457,11 @@ nav .menumenu .fleche {
 .plats .titre.titred {
   padding-top: 30px;
 }
+@media screen and (min-width: 800px) {
+  .plats .titre.entrees {
+    padding-top: 30px;
+  }
+}
 .plats .plat {
   display: flex;
   flex: 0 1 360px;
