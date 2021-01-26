@@ -217,6 +217,7 @@ nav {
   padding-bottom: 15px;
   width: 90vw;
 }
+
 .restaurants a.lafigure {
   display: flex;
   flex-flow: column;
@@ -277,15 +278,25 @@ figure .nouveau {
 .restaurants figcaption .lecoeur.nouv {
   top: -45px;
 }
-.restaurants figcaption .coeurrose {
+
+/*.lerestau figure img {
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  object-position: center;
+}*/
+.coeurrose {
   position: relative;
   top: 10px;
 }
-.restaurants figcaption .coeurrose-old {
+
+.coeurrose-old {
   position: relative;
   top: 30px;
 }
-.restaurants figcaption .coeurrose .fa-heart, .restaurants figcaption .coeurrose-old .fa-heart {
+
+.coeurrose .fa-heart, .coeurrose-old .fa-heart {
   position: absolute;
   z-index: 3;
   font-weight: 200;
