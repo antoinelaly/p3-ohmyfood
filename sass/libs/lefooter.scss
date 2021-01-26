@@ -1,9 +1,11 @@
-.footer {
+footer {
     background-color: #353535;
+  display: flex;
 }
 
-.footer a {
-    color: #fff;
+footer a, footer a:link {
+    color: #fff !important;
+    text-decoration: none;
 }
 
 footer .logo {
@@ -18,11 +20,6 @@ li a {
 li {
     list-style: none;
 }
-
-footer {
-    display: flex;
-    background-color: var(--gris);
-  }
   
   footer .col {
     display: flex;
@@ -53,10 +50,10 @@ footer {
     }
   }
   
-  .fa-utensils {
+  footer .fa-utensils {
       padding: 0px 10px 0px 4px;
   }
 
-  .fa-handshake {
+  footer .fa-handshake {
     padding: 0px 8px 0px 0px;
 }
