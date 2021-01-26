@@ -50,13 +50,22 @@ nav {
   }
 }
 
-.explo {
+button.explo {
   background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0 0 11px rgba(33,33,33,.4); 
+  transition: box-shadow .3s;
   color: #fff;
   padding: 15px 20px;
   border-radius: 50px;
   border: none;
   margin: 35px 15px;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(#ffaee8, #b897e0);
+    box-shadow: 0 7px 15px 1px #e8e8e8;
+    transition-duration: 500ms;
+    box-shadow: 0 0 22px rgba(33,33,33,.5);
+  }
 }
 
   /* overlay */ 
