@@ -85,14 +85,18 @@ button.explo:hover {
     display: inline;
     opacity: 1;
     width: 98.5vw;
-    height: 100vh;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
   96% {
     z-index: 100;
     display: inline;
     opacity: 1;
     width: 98.5vw;
-    height: 100vh;
+    height: 100%;
   }
   100% {
     z-index: -1;
@@ -106,7 +110,7 @@ button.explo:hover {
 }
 .overlay-home .skeleton .image, .overlay-home .skeleton .line {
   background-image: linear-gradient(90deg, #e0e0e0 0px, #ededed 30px, #e0e0e0 60px);
-  background-size: calc(220px + 100px);
+  background-size: calc(50vw + 20vh);
   animation: refresh 2s linear;
 }
 .overlay-home .skeleton .image {
@@ -128,14 +132,14 @@ button.explo:hover {
 
 @keyframes refresh {
   0% {
-    background-position: calc(-100px);
-    width: 220px;
+    background-position: calc(-20vh);
+    width: 50vw;
     z-index: 110;
     opacity: 1;
   }
   98% {
-    background-position: 220px;
-    width: 220px;
+    background-position: 50vw;
+    width: 50vw;
     z-index: 110;
     opacity: 1;
   }
@@ -163,7 +167,7 @@ button.explo:hover {
   border: solid #f6f6f6;
   border-radius: 50px;
   background-color: #f6f6f6;
-  box-shadow: 0 7px 15px 1px #e8e8e8;
+  box-shadow: 0 0 15px 0 #e8e8e8;
   padding: 15px;
   margin: 15px;
 }

@@ -84,10 +84,13 @@ button.explo {
 @keyframes revealpage {
   0% { z-index: 100;  display: inline; 
     opacity: 1;  width: 98.5vw;
-    height: 100vh;  }
+    height: 100%;    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;  }
   96%  { z-index: 100;  display: inline; 
     opacity: 1;  width: 98.5vw;
-    height: 100vh;  }
+    height: 100%;  }
   100%  { z-index: -1;display: none; 
     opacity: 0; }
 }
@@ -96,8 +99,8 @@ button.explo {
 
 
 $skeleton-color: #e0e0e0;
-$skeleton-width: 220px;
-$skeleton-offset: 100px;
+$skeleton-width: 50vw /*220px*/;
+$skeleton-offset: 20vh;
 
 $image-height: 50px;
 
