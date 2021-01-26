@@ -481,6 +481,12 @@ nav .menumenu .fleche {
   animation-fill-mode: both;
   animation-delay: 0.1s;
 }
+.plats .plat:nth-child(0) {
+  animation-delay: 1s;
+}
+.plats .plat:nth-child(1) {
+  animation-delay: 1.2s;
+}
 .plats .plat:nth-child(2) {
   animation-delay: 1.4s;
 }

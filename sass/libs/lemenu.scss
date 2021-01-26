@@ -105,7 +105,7 @@ nav .menumenu {
         animation: showItem .8s;
         animation-fill-mode: both;
         animation-delay: .1s;
-        @for $i from 2 to 14 {
+        @for $i from 0 to 14 {
             &:nth-child(#{$i}) {
                 animation-delay: #{1 + $i * 0.2}s;
             }
