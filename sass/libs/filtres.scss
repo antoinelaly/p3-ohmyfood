@@ -1,7 +1,7 @@
 .filtres {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 25px 25px;
+    padding: 10px 25px 50px 25px;
 
     .letitre {
         display: flex;
@@ -23,9 +23,9 @@
         .fas  {
             display: flex;
             color: grey;
-            padding: 7px;
+            padding: 0;
             position: relative;
-            left: -20px;
+            left: -25px;
             align-items: center;
         }
         :hover .fas {
@@ -34,7 +34,7 @@
 
         p  {
             display: flex;
-            padding: 6px;
+            padding: 3px;
             align-items: center;
         }
 
