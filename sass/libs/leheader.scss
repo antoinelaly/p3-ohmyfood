@@ -10,11 +10,10 @@ nav {
   justify-content: center;
   padding-top: 25px;
   padding-bottom: 15px;
-}
-
-.logo img {
-  justify-content: center;
-  width:168px;
+  img {
+    justify-content: center;
+    width:168px;
+  }
 }
 
 .bsearch {
@@ -23,10 +22,9 @@ nav {
   justify-content: center;
   border-top: solid 2px #d5d5d5;
   padding: 10px;
-}
-
-.bsearch p {
-  padding-left: 18px;
+  p {
+    padding-left: 18px;
+  }
 }
 
 .lemenu {
@@ -35,37 +33,31 @@ nav {
   align-items: center;
   background-color: $gris-claire;
   padding-bottom: 40px;
-}
-
-  .lemenu h3 {
+  h3 {
     justify-content: center;
     text-align: center;
     padding: 40px 50px 10px;
+    font-size: 1.6em;
   }
-
-  .lemenu button {
+  button {
     justify-content: center;
     text-align: center;
     padding: 15px 25px;
   }
-
-  .lemenu p {
+  p {
     text-align: center;
     padding: 0px 20px;
   }
+}
 
-  .lemenu h3 {
-    font-size: 1.6em;
-  }
-
-  .explo {
-    background: linear-gradient(#FF79DA, #9356DC);
-    color: #fff;
-    padding: 15px 20px;
-    border-radius: 50px;
-    border: none;
-    margin: 35px 15px;
-  }
+.explo {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: none;
+  margin: 35px 15px;
+}
 
   /* overlay */ 
 .overlay-home {
@@ -88,9 +80,7 @@ nav {
     opacity: 1;  width: 98.5vw;
     height: 100vh;  }
   100%  { z-index: -1;display: none; 
-    opacity: 0;/*width:0;
-    height:0;
-    overflow:hidden;*/  }
+    opacity: 0; }
 }
 
 /* skeleton */ 
