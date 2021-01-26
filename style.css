@@ -362,10 +362,6 @@ figure .nouveau {
     opacity: 0;
   }
 }
-.commander {
-  padding-bottom: 30px;
-}
-
 nav .menumenu {
   display: flex;
   justify-content: space-around;
@@ -585,6 +581,8 @@ section.commander {
   justify-content: center;
   text-align: center;
   background-color: #f6f6f6;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 @keyframes in {
