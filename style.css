@@ -209,7 +209,7 @@ button.explo:hover {
   color: grey;
   padding: 0;
   position: relative;
-  left: -25px;
+  left: -15px;
   align-items: center;
 }
 .filtres .petitsb :hover .fas {
@@ -249,6 +249,9 @@ button.explo:hover {
   .filtres .petitsb .button {
     margin: 15px;
     left: -40px;
+  }
+  .filtres .petitsb .fas {
+    left: -25px;
   }
 }
 .restaurants {
