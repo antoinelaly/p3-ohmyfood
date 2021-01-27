@@ -186,8 +186,8 @@ button.explo:hover {
     height: 350px;
   }
   99% {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     opacity: 0.5;
   }
   100% {
