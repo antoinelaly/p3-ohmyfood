@@ -110,7 +110,7 @@ button.explo:hover {
 }
 .overlay-home .skeleton .image, .overlay-home .skeleton .line {
   background-image: linear-gradient(90deg, #e0e0e0 0px, #ededed 30px, #e0e0e0 60px);
-  background-size: calc(50vw + 200vh);
+  background-size: calc(50vw + 100vh);
   animation: refresh 2s linear;
 }
 .overlay-home .skeleton .image {
@@ -132,7 +132,7 @@ button.explo:hover {
 
 @keyframes refresh {
   0% {
-    background-position: calc(-200vh);
+    background-position: calc(-100vh);
     width: 50vw;
     z-index: 110;
     opacity: 1;
