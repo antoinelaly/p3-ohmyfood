@@ -565,16 +565,16 @@ nav .menumenu .fleche {
 .plats .plat:nth-child(13) {
   animation-delay: 3.6s;
 }
-.plats .plat:hover .commande {
+.plats .plat:hover .commande, .plats .plat:active .commande {
   transform: translateX(-65px);
   transition: 0.8s ease-in-out;
   position: relative;
 }
-.plats .plat:hover .commande .points, .plats .plat:hover .commande .points2 {
+.plats .plat:hover .commande .points, .plats .plat:hover .commande .points2, .plats .plat:active .commande .points, .plats .plat:active .commande .points2 {
   color: #000;
   transition: 0.8s linear;
 }
-.plats .plat:hover .commande .valida i {
+.plats .plat:hover .commande .valida i, .plats .plat:active .commande .valida i {
   animation-name: in;
   animation-duration: 0.8s;
   /* Safari and Chrome: */
