@@ -109,7 +109,7 @@ button.explo {
   color:white;
   font-size:40px;
   transform: translate(-50%,-50%);
-  animation: pulse 2.9s linear;
+  animation: pulse2 2.9s linear;
   opacity: 0;
   width:300px;height:300px;
 }
@@ -121,25 +121,23 @@ button.explo {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
-  animation: pulse2 3s linear;
+  animation: pulse3 3s linear;
   opacity: 0;
-  width:200px;height:200px;
+  width:150px;height:150px;
 }
 
 
-@keyframes pulse{
+@keyframes pulse2{
   0%{width:300px;height:300px;opacity: .8;}
-  50%{width:400px;height:400px;opacity: 1;}
+  50%{width:500px;height:500px;opacity: 1;}
   99%{width:300px;height:300px;opacity: .5;}
   100%{width:0;height:0;
     opacity: 0; }
 }
 
-@keyframes pulse2{
-  0%{width:200px;height:200px;opacity: .8;}
-  25%{width:250px;height:250px;opacity: 1;}
-  50%{width:200px;height:200px;}
-  75%{width:250px;height:250px;}
+@keyframes pulse3{
+  0%{width:220px;height:220px;opacity: .5;}
+  50%{width:250px;height:250px;opacity: 1;}
   99%{width:150px;height:150px;opacity: .5;}
   100%{width:0;height:0;
     opacity: 0; }

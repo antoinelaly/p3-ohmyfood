@@ -117,7 +117,7 @@ button.explo:hover {
   color: white;
   font-size: 40px;
   transform: translate(-50%, -50%);
-  animation: pulse 2.9s linear;
+  animation: pulse2 2.9s linear;
   opacity: 0;
   width: 300px;
   height: 300px;
@@ -131,21 +131,21 @@ button.explo:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: pulse2 3s linear;
+  animation: pulse3 3s linear;
   opacity: 0;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
-@keyframes pulse {
+@keyframes pulse2 {
   0% {
     width: 300px;
     height: 300px;
     opacity: 0.8;
   }
   50% {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     opacity: 1;
   }
   99% {
@@ -159,24 +159,16 @@ button.explo:hover {
     opacity: 0;
   }
 }
-@keyframes pulse2 {
+@keyframes pulse3 {
   0% {
-    width: 200px;
-    height: 200px;
-    opacity: 0.8;
+    width: 220px;
+    height: 220px;
+    opacity: 0.5;
   }
-  25% {
+  50% {
     width: 250px;
     height: 250px;
     opacity: 1;
-  }
-  50% {
-    width: 200px;
-    height: 200px;
-  }
-  75% {
-    width: 250px;
-    height: 250px;
   }
   99% {
     width: 150px;
