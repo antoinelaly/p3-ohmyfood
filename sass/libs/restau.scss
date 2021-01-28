@@ -133,11 +133,11 @@ figure .nouveau {
 }
 
 
-.coeurrose input.coeuroverlay {
-  z-index: 10;
+.lecoeur input.coeuroverlay {
+  z-index: 100;
   position: absolute;
-  width: 100%;
-  height: 100%; 
+  width: 20px;
+  height: 20px; 
   background-color: Transparent;
   background-repeat:no-repeat;
   border: none;
@@ -145,8 +145,8 @@ figure .nouveau {
   overflow: hidden;
   outline:none;
 }
-.coeurrose input.coeuroverlay:hover .overlay,
-.coeurrose input.coeuroverlay:hover .overlay {
+input.coeuroverlay:hover .overlay,
+input.coeuroverlay:hover .overlay-old {
   -ms-transform: scaleY(0);
   -webkit-transform: scaleY(0);
   -moz-transform: scaleY(0);
