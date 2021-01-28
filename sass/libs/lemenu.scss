@@ -111,18 +111,27 @@ nav .menumenu {
             }
         }
         &:hover .commande, &:active .commande {
+            -ms-transform: translateY(-65px);
+            -webkit-transform: translateY(-65px);
+            -moz-transform: translateY(-65px);
+            -o-transform: translateY(-65px);
             transform: translateX(-65px);
+            -webkit-transition: .8s ease-in-out; 
+            -moz-transition: .8s ease-in-out;
+            -o-transition: .8s ease-in-out;
             transition: .8s ease-in-out;
             position: relative;
             .points, .points2 {
                 color: #000;
+                -webkit-transition: .8s ease-in-out; 
+                -moz-transition: .8s ease-in-out;
+                -o-transition: .8s ease-in-out;
                 transition: .8s linear;
             }
             .valida {
                 i {
                     animation-name:in;
                     animation-duration:.8s;
-                    /* Safari and Chrome: */
                     -webkit-animation-name:in;
                     -webkit-animation-duration:.8s;
                     transform-origin: center center;
@@ -135,6 +144,9 @@ nav .menumenu {
             padding: 12px 0 12px 12px;
         }
         .commande {
+            -webkit-transition: .6s ease-in-out; 
+            -moz-transition: .6s ease-in-out;
+            -o-transition: .6s ease-in-out;
             transition: .6s ease-in-out;
             display: flex;
             position: relative;
@@ -192,7 +204,6 @@ nav .menumenu {
 
         }
     }
-
 }
 
 section.commander {
