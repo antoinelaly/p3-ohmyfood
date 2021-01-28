@@ -110,39 +110,6 @@ nav .menumenu {
                 animation-delay: #{1 + $i * 0.2}s;
             }
         }
-        &:hover .commande, &:active .commande {
-            -ms-transform: translateY(-65px);
-            -webkit-transform: translateY(-65px);
-            -moz-transform: translateY(-65px);
-            -o-transform: translateY(-65px);
-            transform: translateX(-65px);
-            -webkit-transition: .8s ease-in-out; 
-            -moz-transition: .8s ease-in-out;
-            -o-transition: .8s ease-in-out;
-            transition: .8s ease-in-out;
-            position: relative;
-            .points, .points2 {
-                color: #000;
-                -webkit-transition: .8s ease-in-out; 
-                -moz-transition: .8s ease-in-out;
-                -o-transition: .8s ease-in-out;
-                transition: .8s linear;
-            }
-            .valida {
-                i {
-                    animation-name:in;
-                    animation-duration:.8s;
-                    -webkit-animation-name:in;
-                    -webkit-animation-duration:.8s;
-                    transform-origin: center center;
-                    transition-delay: 2s;
-                }
-            }
-        }
-        .desc {
-            flex: 1 0 77%;
-            padding: 12px 0 12px 12px;
-        }
         .commande {
             -webkit-transition: .6s ease-in-out; 
             -moz-transition: .6s ease-in-out;
@@ -203,6 +170,41 @@ nav .menumenu {
             }
 
         }
+
+        &:hover .commande, &:active .commande {
+            -ms-transform: translateY(-65px);
+            -webkit-transform: translateY(-65px);
+            -moz-transform: translateY(-65px);
+            -o-transform: translateY(-65px);
+            transform: translateX(-65px);
+            -webkit-transition: .8s ease-in-out; 
+            -moz-transition: .8s ease-in-out;
+            -o-transition: .8s ease-in-out;
+            transition: .8s ease-in-out;
+            position: relative;
+            .points, .points2 {
+                color: #000;
+                -webkit-transition: .8s ease-in-out; 
+                -moz-transition: .8s ease-in-out;
+                -o-transition: .8s ease-in-out;
+                transition: .8s linear;
+            }
+            .valida {
+                i {
+                    animation-name:in;
+                    animation-duration:.8s;
+                    -webkit-animation-name:in;
+                    -webkit-animation-duration:.8s;
+                    transform-origin: center center;
+                    transition-delay: 2s;
+                }
+            }
+        }
+        .desc {
+            flex: 1 0 77%;
+            padding: 12px 0 12px 12px;
+        }
+        
     }
 }
 
@@ -252,21 +254,28 @@ to   {-webkit-transform: rotate(3turn);}
     100% {opacity:1;}
 }
 
-.plat .platoverlay {
+.plat input.platoverlay {
     z-index: 10;
     position: absolute;
     width: 100%;
-    height: 100%;
-    &:hover .commande, &:active .commande {
-        -ms-transform: translateY(-65px);
-        -webkit-transform: translateY(-65px);
-        -moz-transform: translateY(-65px);
-        -o-transform: translateY(-65px);
-        transform: translateX(-65px);
-        -webkit-transition: .8s ease-in-out; 
-        -moz-transition: .8s ease-in-out;
-        -o-transition: .8s ease-in-out;
-        transition: .8s ease-in-out;
-        position: relative;
-    }
+    height: 100%; 
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.plat input.platoverlay:hover .commande {
+    -ms-transform: translateY(-65px);
+    -webkit-transform: translateY(-65px);
+    -moz-transform: translateY(-65px);
+    -o-transform: translateY(-65px);
+    transform: translateX(-65px);
+    -webkit-transition: .8s ease-in-out; 
+    -moz-transition: .8s ease-in-out;
+    -o-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
+    position: relative;
 }
