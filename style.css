@@ -143,6 +143,11 @@ button.explo:hover {
     height: 450px;
     opacity: 0.8;
   }
+  15% {
+    width: 450px;
+    height: 450px;
+    opacity: 1;
+  }
   50% {
     width: 500px;
     height: 500px;
@@ -595,6 +600,7 @@ nav .menumenu .fleche {
   padding: 5px 18px 12px 10px;
   background-color: #fff;
   margin-top: auto;
+  min-width: 30px;
 }
 @media (max-width: 370px) {
   .plats .plat .commande .tarif {
